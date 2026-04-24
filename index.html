@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarjeta de Presentacion</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #1f2a37;
+      --muted: #526173;
+      --accent: #0f766e;
+      --accent-hover: #0b5e57;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      background: radial-gradient(circle at top, #ffffff 0%, var(--bg) 60%);
+      color: var(--text);
+    }
+
+    /* Tarjeta principal */
+    .card {
+      width: min(90vw, 360px);
+      padding: 1.8rem;
+      border-radius: 16px;
+      background: var(--card);
+      box-shadow: 0 12px 28px rgba(22, 32, 48, 0.12);
+      text-align: center;
+    }
+
+    /* Nombre y subtitulo */
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+      letter-spacing: 0.2px;
+    }
+
+    p {
+      margin: 0.65rem 0 1.5rem;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    /* Enlace de accion */
+    a {
+      display: inline-block;
+      padding: 0.7rem 1.1rem;
+      border-radius: 10px;
+      background: var(--accent);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.2s ease;
+    }
+
+    a:hover,
+    a:focus-visible { background: var(--accent-hover); }
+  </style>
+</head>
+<body>
+  <article class="card">
+    <h1>Daniel</h1>
+    <p>Estudiante de desarrollo front-end</p>
+    <a href="#">Contacto</a>
+  </article>
+</body>
+</html>
